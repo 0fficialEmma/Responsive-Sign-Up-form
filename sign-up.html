@@ -12,10 +12,11 @@
         <article class="sign-in__details">
             <h1>Sign Up</h1>
             <p>Fill the form below to create your account</p>
-            <form class="sign-in__form">
+            <form action="https://api.web3forms.com/submit" method="POST" class="sign-in__form">
+                <input type="hidden" name="access_key" value="44ae4898-8dcb-4a98-ab70-435770ec85c9">
                  <div class="form__control">
                     <label for="fullname">Fullname</label>
-                    <input type="text" id="fullname" placeholder="Enter your fullname">
+                    <input type="text" name="name" required placeholder="Enter your name">
                 </div>
                  <div class="form__control">
                     <label for="email">Email</label>
